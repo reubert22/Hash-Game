@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo da velha</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+	<body>
+		<div class="container" align="center">
+			<table id="tableId" border = 1  length="100">
+				<tbody>
+					<h2 align="center">Jogo da velha - 2 jogadores</h2>
+					<tr>
+						<td><img src="img/branco.png" id="celula1" onclick="checkGame(this.id)"></td>
+						<td><img src="img/branco.png" id="celula2" onclick="checkGame(this.id)"></td> 
+						<td><img src="img/branco.png" id="celula3" onclick="checkGame(this.id)"></td>
+					</tr>
+					<tr>
+						<td><img src="img/branco.png" id="celula4" onclick="checkGame(this.id)"></td>
+						<td><img src="img/branco.png" id="celula5" onclick="checkGame(this.id)"></td>
+						<td><img src="img/branco.png" id="celula6" onclick="checkGame(this.id)"></td>
+					</tr>
+					<tr>
+						<td><img src="img/branco.png" id="celula7" onclick="checkGame(this.id)"></td>
+						<td><img src="img/branco.png" id="celula8" onclick="checkGame(this.id)"></td>
+						<td><img src="img/branco.png" id="celula9" onclick="checkGame(this.id)"></td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<button class="btn btn-info" onclick="reloadGame()">Recarregar Jogo</button>
+			<p><h4>Regras do jogo:</h4> O primeiro jogador sempre começa com 'X' .</p>
+			<p>Esse jogo é destinado a dois jogadores.</p>
+			<p>O módulo Jogador vs. Computador será implementado futuramente.</p>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</body>
+</html>
